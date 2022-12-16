@@ -1,0 +1,44 @@
+.wrapperBlock{
+    margin-top: 64px !important;
+}
+
+.itemBlock:nth-child(1){
+   padding-left: 0 !important;
+   padding-right: 16px !important;
+}
+
+.itemBlock:nth-child(4){
+    padding-right: 0 !important;
+}
+
+.innerBlock{
+    background-color: rgb(255, 255, 255);
+    padding: 24px;
+}
+
+.itemBlock h6{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.429);
+    font-weight: 600;
+}
+.itemBlock h3{
+    text-align: center;
+    margin-top: 24px;
+    font-weight: 600;
+}
+
+.wrapperLastDonor{
+    margin-top: 32px !important;
+    background-color: rgb(255, 255, 255);
+    padding: 16px !important;
+}
+table thead tr:nth-child(1) th:nth-child(2){
+    color: #36A836;
+}
+table thead th h4{
+    font-weight: 600;
+}
+table thead tr th:nth-child(2),table tbody tr td:nth-child(2){
+    text-align: right;
+    color: rgb(151, 151, 151);
+}

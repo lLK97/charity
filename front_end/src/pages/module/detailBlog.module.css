@@ -1,0 +1,35 @@
+.wrapper{
+    padding: 64px;
+}
+.button{
+    width: auto !important;
+    margin: auto;
+}
+.left{
+    font-size: 20px;
+    padding-right: 64px !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.171);
+}
+.relativeDonation{
+    text-align: center;
+    margin-top: 64px !important;
+}
+@media all and (min-width: 992px){
+    .wrapperCardDonation >div{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media all and (max-width: 1264px){
+    .wrapper{
+        padding: 16px;
+    }
+    .left{
+        padding: 32px 8px !important;
+        border-right: 0;
+    }
+    .button{
+        margin-top: 32px;
+    }
+}

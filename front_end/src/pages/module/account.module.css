@@ -1,0 +1,53 @@
+.wrrapperInfor{
+    padding: 32px;
+}
+
+.img{
+    background-size: cover;
+    background-position: center center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.infor{
+    padding-inline: 48px !important;
+}
+.infor h3{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.button{
+    border-radius: 5px;
+}
+.linkDetail{
+    text-align: right;
+}
+
+.itemSlider{
+    padding: 24px;
+    color: white;
+}
+
+
+.category{
+    background-color: #37A837;
+    color: white;
+    text-align: center;
+    padding-inline: 128px;
+}
+@media all and (max-width:992px){
+    .infor{
+        padding-inline: 0 !important;
+    }
+    .category{
+        padding-inline: 64px;
+    }
+    .button{
+        display: none;
+        
+    }
+    .linkDetail{
+        display: none;
+    }
+ 
+}

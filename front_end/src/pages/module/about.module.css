@@ -1,0 +1,34 @@
+
+.title{
+    height: 125px;
+    background-color: #37A837;
+}
+.title h3{
+    font-weight: 600;
+    line-height: 125px;
+    text-align: center;
+    color: white;
+}
+.content{
+   width: 960px;
+   margin: 64px auto;
+   text-align: justify;
+   line-height: 32px;
+   font-size: 20px;
+}
+
+@media all and (max-width: 992px){
+    .title {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .title h3{
+        line-height: inherit !important;
+        padding-inline: 16px;
+    }
+    .content{
+        width: auto;
+        padding-inline: 24px;
+    }
+}

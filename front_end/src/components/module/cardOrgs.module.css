@@ -1,0 +1,60 @@
+.wrapper{
+    padding: 8px !important;
+    padding-bottom: 32px !important;
+}
+.inner{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 24px;
+}
+.logo{
+    padding: 0 !important;
+    align-self: center;
+}
+.logo img{
+    width: 100px;
+        height: auto;
+        margin-bottom: 16px;
+}
+
+.wrapperRight{
+    padding: 0 !important;
+    text-align: center;
+}
+
+.wrapperRight h5{
+    font-weight: 600;
+    color: #37A837;
+}
+
+.wrapperRight a {
+    text-decoration: none;
+}
+
+.detail{
+    margin-top: 8px !important;
+    height: 30px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-align: center;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;   
+}
+
+.button{
+    margin-top: 16px;
+    background-color: transparent !important;
+    border-radius: 10px;
+    padding: 8px 32px;
+    border: 1px solid #37A837;
+    color: #37A837;
+}
+.button:hover{
+    background-color:#37A837 !important;
+    color: white;
+}
+
+@media all and (max-width: 992px){
+ 
+}
+

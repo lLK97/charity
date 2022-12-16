@@ -1,0 +1,9 @@
+.wrapper{
+    min-width: 1536px;
+}
+.wrapperLeft{
+    padding: 0 !important;
+}
+.wrapperRight{
+    background-color: #dfe1e7a3;
+}

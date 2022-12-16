@@ -1,0 +1,84 @@
+.wrapperText{
+    padding: 64px;
+}
+.text{
+    font-size: 20px;
+    padding-right: 40px !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.116);
+}
+.cardDonation{
+    padding-left: 32px;
+}
+.wrapperCardDonation{
+    padding-left: 32px !important;
+}
+.cardDonation{
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.target{
+    margin-top: 32px;
+}
+
+.wrapperProgess{
+    margin-bottom:32px;
+}
+
+.lineInfo{
+    margin-bottom:16px;
+    display: flex;
+}
+
+.lineInfo span{
+    margin-left: auto;
+    font-weight: 600;
+}
+
+.button button{
+    width:100%;
+    border-radius: 10px ;
+    margin: 16px auto ;
+}
+
+.partner{
+    margin-top: 32px;
+}
+
+.partner h5{
+    opacity: 0.4;
+    margin-bottom: 16px;
+}
+.partner img{
+    width: 50px;
+    height: 50px;
+}
+.partner span{
+    margin-left: 10px;
+}
+.relativeDonation{
+    padding-inline: 64px;
+}
+.relativeDonation h3{
+    text-align: center;
+}
+
+@media all and (max-width: 992px){
+    .wrapperText{
+        padding-inline: 32px;
+    }
+    .text{
+        border: 0;
+        padding: 0 !important;
+    }
+    .relativeDonation{
+        padding-inline: 24px;
+    }
+    .cardDonation{
+        margin-top: 64px;
+    }
+    .wrapperCardDonation{
+        width: 100%;
+        padding: 0 !important;
+    }
+}

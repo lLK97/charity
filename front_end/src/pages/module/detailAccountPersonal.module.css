@@ -1,0 +1,30 @@
+.inforDetail{
+    padding: 64px 128px;
+}
+.inforDetail h3{
+    text-align: center;
+    font-weight: 600;
+}
+.inforDetail form{
+    margin-top: 32px;
+}
+.inforDetail form label{
+    font-weight: 600;
+    font-size: 20px;
+    color: #888888;
+}
+
+.wrapperButton{
+    text-align: center;
+}
+.wrapperButton button{
+    margin: 16px;
+    padding-inline: 32px;
+    background-color: #37A837;
+    border: 0;
+}
+@media all and (max-width:992px){
+    .inforDetail{
+        padding: 32px 16px;
+       }
+}

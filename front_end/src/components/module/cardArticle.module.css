@@ -1,0 +1,27 @@
+.wrapper{
+    padding: 32px !important;
+}
+.innerBlock{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden; 
+    background-color: white !important;
+}
+
+.innerBlock img{
+    width: 100%;
+    height: 100%;
+}
+.innerText{
+    padding: 16px !important;
+}
+.innerText h5{
+    text-align: left;
+    margin-bottom: 64px;
+}
+.innerText p {
+    margin:0;
+    text-align: right;
+    opacity: 0.6;
+}

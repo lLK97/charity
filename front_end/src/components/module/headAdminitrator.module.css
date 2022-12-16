@@ -1,0 +1,38 @@
+.wrapper{
+    color: rgba(0, 0, 0, 0.646);
+}
+
+.wrapperRight{
+    display: flex;
+}
+.wrapperUser{
+    margin-left: auto;
+}
+
+.wrapperUser span:nth-child(1){
+    font-weight: 600;
+}
+
+.wrapperUser span:nth-child(2){
+    padding: 10px;
+    margin-left: 10px;;
+    background-color: rgba(0, 0, 0, 0.387);
+    color: white;
+    border-radius: 50%;
+}
+
+.wrapperUser span:nth-child(2) svg{
+    margin-top: -3px;
+}
+
+.wrapperLeft h4{
+    font-weight: 600;
+}
+
+.wrapperIcon{
+    padding-inline: 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.237) !important;
+}
+.wrapperIcon span{
+    margin-left: 16px;
+}

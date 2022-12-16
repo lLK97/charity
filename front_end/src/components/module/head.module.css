@@ -1,0 +1,147 @@
+.inner{
+    height: 90px;
+    box-sizing: border-box;
+    margin: 0 !important;
+}
+
+
+
+.section_logo, .menu{
+    height: 100%;
+    display: flex;
+}
+
+.section_logo{
+    margin: auto auto auto 32px;
+    text-align: center;
+    padding: 0 !important;
+}
+.section_logo img{
+    width: 25%;  
+    height: auto;
+    margin: auto;
+    opacity: 80%;  
+}
+.section_logo span{
+    font-weight: bolder;
+    color: rgb(105, 214, 105);
+    margin: auto;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+/* 
+
+
+Menu section
+
+
+*/
+
+.menu
+.inner_menu{
+    width: 100%;
+    margin: 0;
+    justify-content: flex-end;
+    align-self: center;
+    text-align: center;
+}
+
+.inner_menu a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-text-primary);
+
+}
+
+.item_menu{
+    margin: auto;
+}
+.inner_menu a:hover{
+    color: var(--color-text-secondary);
+}
+.wrapper_btmenu{
+    display: none;
+}
+
+.activeItemMenu a{
+    color: #37A837 !important;
+}
+/* 
+End
+*/
+
+
+@media all and (max-width: 992px){
+    .inner{
+        height: auto;
+    }
+    .section_logo{
+        padding: 15px;
+        margin: 0;
+    }
+    .section_logo img{
+        margin-right: 0;
+        width: 15%;
+    }
+    .section_search{
+        padding-inline: 10px;
+    }
+    .section_search span{
+        margin: auto;
+        margin-right: 0;       
+    }
+    .form_search{
+        margin: auto;
+        margin-left: 0;
+    }
+    .menu{
+        padding: 0 !important;
+        place-self: center;
+    }
+    .inner_menu{
+        margin: 0;
+        
+    }
+    .item_menu{
+        padding: 16px 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.142);
+        width: fit-content;
+        
+        
+    }
+    .search_icon{
+        display: block;
+        margin-left: 0;
+    }
+    .section_search span{
+        margin-left: 0;        
+    }
+  
+   
+    .form_search{
+        display: none;
+    }
+    .wrapper_btmenu{
+        display: flex;
+        padding: 16px 0; 
+    }
+    .bt_menu{
+        display: block;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .bt_menu svg{
+        font-size: 24px;
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,75 @@
+.wrapperDesShort{
+    
+}
+.innerDesShort{
+    text-align: left;
+    padding-right: 64px
+}
+.innerDesShort h3{
+    font-weight: 600;
+}
+.innerDesShort h5{
+    margin-top: 32px;
+    line-height: 32px;
+}
+.wrapperButton{
+    margin-top: 64px;
+    
+}
+.wrapperButton button{
+    border-radius: 5px;   
+    border: 1px solid #37A837; 
+}
+.wrapperButton button:nth-child(2){
+    margin-left: 32px;
+    background-color: transparent;
+
+    color: #37A837;
+}
+.wrapperButton button:nth-child(2):hover{
+    background-color: #37A837;
+    color: white;
+}
+.wrapperButton button:nth-child(1):hover{
+    background-color: transparent;
+    border: 1px solid #37A837;
+    color: #37A837;
+}
+
+
+.img{
+    background-size: cover;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.titleBlock h2{
+    font-weight: 600;    
+}
+
+.detail{
+    margin-top: 64px;
+}
+.detail >p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.detail h3{
+    font-weight: 600;
+}
+
+.wrapperCard{
+    margin-top: 64px !important;
+}
+
+@media all and (max-width: 972px){
+    .innerDesShort{
+        padding-right: 0;
+    }
+}
+
+

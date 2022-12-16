@@ -1,0 +1,137 @@
+.wrapper{
+    padding: 64px;
+}
+.wrapper h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+.table{
+    margin-top: 32px;
+}
+.table thead{
+    margin-bottom: 10px;
+}
+.table thead th{
+    text-align: center;
+}
+.table tbody tr td:nth-child(2){
+    width: 20%;
+}
+.table tbody tr td:nth-child(3){
+    width: 20%;
+}
+.table tbody tr td
+{
+  text-align: center;
+}
+
+.table tbody tr td:nth-child(3) >div{
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table tbody tr td button{
+    margin-inline: 2px;
+}
+
+.wrapperForm{
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+    background-color: rgba(0, 0, 0, 0.574);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+
+}
+
+.formEdit{
+    padding: 32px 64px;
+    width: 90vw;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.formEdit>div{
+    width: 45%;
+    height: fit-content;
+    flex: 0 0 45%;
+    margin: 0 auto;
+
+}
+.formEdit label{
+    font-size: 20px;
+    margin-top: 8px;
+}
+.formEdit h3{
+    margin-bottom: 32px;
+    width: 100%;
+    flex: 0 0 100%;
+}
+.buttonGroup{
+    text-align: center;
+    margin-top: 32px !important; 
+    width: 100% !important;
+}
+.buttonGroup button{
+    margin-inline: 5px;
+    padding: 10px 20px;
+}
+
+@media all and (max-width:992px){
+    .wrapper{
+        padding: 32px 16px;
+       }
+       .formEdit>div{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .table tbody tr td:nth-child(2){
+        width: auto;
+    }
+    .table tbody tr td:nth-child(3){
+        width: auto;
+    }
+    .table tbody tr td:nth-child(2),
+    .table tbody tr td:nth-child(3){
+        text-align: center;
+    }
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+    thead { 
+		display: none !important;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+        font-weight: 600;
+        font-size: 18px;
+	}
+	
+
+	td:nth-of-type(1):before { content: ""; }
+	td:nth-of-type(2):before { content: "Tên Chiến Dịch: "; }
+	td:nth-of-type(3):before { content: "Thông tin: "; }
+	td:nth-of-type(4):before { content: "Ngày bắt đầu: "; }
+	td:nth-of-type(5):before { content: "Ngày kết thúc: "; }
+	td:nth-of-type(6):before { content: "Mục tiêu: "; }
+	td:nth-of-type(7):before { content: "Trạng thái: "; }
+	td:nth-of-type(8):before { content: ""; }
+
+}
