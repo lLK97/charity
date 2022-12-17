@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardTitle, Row, Col, Table } from 'reactstrap';
 import HeadAdminitrator from '../../components/headAdminitrator';
-import { lastDonor } from '../../assets/jsonData/json';
+import { lastDonation, lastDonor } from '../../assets/jsonData/json';
 import styles from './module/overview.module.css';
 
 const Overview = () => {
@@ -60,7 +60,7 @@ const Overview = () => {
                         <thead>
                             <tr>
                                 <th>
-                                    <h4>Các đợt quyên góp gần đây</h4>
+                                    <h4>Các chiến dịch quyên góp gần đây</h4>
                                 </th>
                                 <th>Xem tất cả</th>
                             </tr>
@@ -84,6 +84,35 @@ const Overview = () => {
 
                     </Table>
                 </div>
+                <div className={styles.wrapperDonation}>
+                    <Table borderless>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h4>Các lượt quyên góp nổi bật </h4>
+                                </th>
+                                <th>Xem tất cả</th>
+                            </tr>
+                            <tr>
+                                <th>Họ tên</th>
+                                <th>Số tiền quyên góp</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                lastDonation.map((item,index)=>{
+                                    return(
+                                        <tr key={index}>
+                                            <td>{item.title}</td>
+                                            <td>{item.amount}</td>
+                                        </tr>
+                                    )
+                                })
+                            }
+                        </tbody>
+                    </Table>
+                </div>
+                
             </Row>
         </div >
     );

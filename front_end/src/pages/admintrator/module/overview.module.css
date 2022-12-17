@@ -27,7 +27,7 @@
     font-weight: 600;
 }
 
-.wrapperLastDonor{
+.wrapperLastDonor, .wrapperDonation{
     margin-top: 32px !important;
     background-color: rgb(255, 255, 255);
     padding: 16px !important;

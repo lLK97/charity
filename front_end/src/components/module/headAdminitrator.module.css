@@ -5,8 +5,12 @@
 .wrapperRight{
     display: flex;
 }
+.wrapperLeft, .wrapperRight{
+    padding: 0 !important;
+}
 .wrapperUser{
     margin-left: auto;
+   
 }
 
 .wrapperUser span:nth-child(1){
