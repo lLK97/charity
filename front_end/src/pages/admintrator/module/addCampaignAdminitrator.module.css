@@ -1,0 +1,22 @@
+.wrapperAddCampaign {
+  background-color: white;
+  margin-top: 32px;
+  padding: 32px;
+}
+.wrapperAddCampaign h5 {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.646);
+}
+
+form {
+  margin-top: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.646);
+}
+.grButton {
+  margin-top: 32px !important;
+}
+.button {
+  border-radius: 5px;
+  margin-right: 16px;
+}
