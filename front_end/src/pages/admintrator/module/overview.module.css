@@ -32,13 +32,17 @@
     background-color: rgb(255, 255, 255);
     padding: 16px !important;
 }
-table thead tr:nth-child(1) th:nth-child(2){
-    color: #36A836;
+.wrapperLastDonor table thead tr:nth-child(1) th:nth-child(2),
+.wrapperDonation table thead tr:nth-child(1) th:nth-child(2)
+{
+    color: #36A836 !important;
 }
 table thead th h4{
     font-weight: 600;
 }
-table thead tr th:nth-child(2),table tbody tr td:nth-child(2){
-    text-align: right;
-    color: rgb(151, 151, 151);
+.wrapperLastDonor table thead tr th:nth-child(2),.wrapperDonation table thead tr th:nth-child(2),
+.wrapperDonation table tbody tr td:nth-child(2), .wrapperLastDonor table tbody tr td:nth-child(2)
+{
+    text-align: right !important;
+    color: rgb(151, 151, 151) !important;
 }

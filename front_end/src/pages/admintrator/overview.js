@@ -100,8 +100,8 @@ const Overview = () => {
                         </thead>
                         <tbody>
                             {
-                                lastDonation.map((item,index)=>{
-                                    return(
+                                lastDonation.map((item, index) => {
+                                    return (
                                         <tr key={index}>
                                             <td>{item.title}</td>
                                             <td>{item.amount}</td>
@@ -112,7 +112,7 @@ const Overview = () => {
                         </tbody>
                     </Table>
                 </div>
-                
+
             </Row>
         </div >
     );

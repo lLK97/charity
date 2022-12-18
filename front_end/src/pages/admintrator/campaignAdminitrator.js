@@ -1,13 +1,7 @@
 import React from "react";
 import HeadAdminitrator from "../../components/headAdminitrator";
 import styles from "./module/campaign.module.css";
-import {
-  FaPlus,
-  FaFilePdf,
-  FaFileExcel,
-  FaPrint,
-  FaRegTrashAlt,
-} from "react-icons/fa";
+
 import {
   DropdownMenu,
   DropdownItem,
@@ -17,6 +11,7 @@ import {
 } from "reactstrap";
 import { campaignJson } from "../../assets/jsonData/json";
 import AddCampaignAdminitrator from "./addCampaianAdminitrator";
+import ServiceAdministrator from "./serviceAdministrator";
 
 const CampaignAdminitrator = () => {
   const [activeAddCampaign, setActiveAddCampaign] = React.useState(false);
@@ -27,6 +22,8 @@ const CampaignAdminitrator = () => {
   const [checkedAll, setcheckAll] = React.useState(false);
   const [checked, setcheck] = React.useState(false);
   const [indexDropdown, setindexDropdown] = React.useState(null);
+  const [isAddNew, setisAddNew] = React.useState(true);
+  const [itemUpdate, setitemUpdate] = React.useState(null)
 
   const toggle = (index) => {
     indexDropdown == index ? setindexDropdown(null) : setindexDropdown(index);
@@ -34,37 +31,25 @@ const CampaignAdminitrator = () => {
   const handlecheckAll = (e) => {
     setcheckAll(e.target.checked);
   };
+  const handleUpdate = (e) => {
+    setisAddNew(false);
+    setitemUpdate(campaignJson.find(item => item._id == e));
+    setActiveAddCampaign(true);
+  }
   return (
     <div className={`${styles.wrapper} wrapperPageAdminitrator`}>
       <HeadAdminitrator title="Quản lý chiến dịch quyên góp" user="Admin" />
 
       {activeAddCampaign != false ? (
-        <AddCampaignAdminitrator handleCancel={handleCancel} />
+        <AddCampaignAdminitrator
+          handleCancel={handleCancel}
+          action={isAddNew == true ? 'new' : 'update'}
+          itemUpdate={itemUpdate}
+        />
       ) : (
         <div className={styles.wrapperContentPage}>
-          <div className={styles.service}>
-            <button
-              className={`${styles.button} buttonPrimary`}
-              onClick={() => setActiveAddCampaign(true)}
-            >
-              <FaPlus /> <span>Tạo đợt quyên góp</span>
-            </button>
-            <button className={`${styles.button} buttonPrimary`}>
-              <FaRegTrashAlt /> <span>Xóa đợt quyên góp</span>
-            </button>
-            <div className={styles.right}>
-              <button className={styles.btService}>
-                <FaFilePdf />
-              </button>
-              <button className={styles.btService}>
-                <FaFileExcel />
-              </button>
-              <button className={styles.btService}>
-                <FaPrint />
-              </button>
-            </div>
-          </div>
-
+          <ServiceAdministrator
+            setActiveAdd={setActiveAddCampaign} />
           <div className={styles.wrapperTable}>
             <Table borderless>
               <thead>
@@ -88,7 +73,7 @@ const CampaignAdminitrator = () => {
               <tbody>
                 {campaignJson.map((item, index) => {
                   return (
-                    <tr key={index}>
+                    <tr key={index} >
                       <td>
                         <input
                           type="checkbox"
@@ -96,13 +81,13 @@ const CampaignAdminitrator = () => {
                           checked={checkedAll == true ? true : null}
                         />
                       </td>
-                      <td>{item.title}</td>
-                      <td>{item.start}</td>
-                      <td>{item.end}</td>
-                      <td>{item.orgsName}</td>
-                      <td>{item.category}</td>
-                      <td>{item.amount}</td>
-                      <td>{item.status}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.title}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.start}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.end}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.orgsName}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.category}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.amount}</td>
+                      <td onClick={() => handleUpdate(item._id)}>{item.status}</td>
                       <td>
                         <Dropdown
                           isOpen={indexDropdown == index ? true : false}
@@ -110,7 +95,7 @@ const CampaignAdminitrator = () => {
                         >
                           <DropdownToggle caret>Chỉnh sửa</DropdownToggle>
                           <DropdownMenu>
-                            <DropdownItem>Sửa</DropdownItem>
+                            <DropdownItem onClick={() => handleUpdate(item._id)}> Sửa</DropdownItem>
                             <DropdownItem>Xóa</DropdownItem>
                           </DropdownMenu>
                         </Dropdown>
@@ -122,8 +107,9 @@ const CampaignAdminitrator = () => {
             </Table>
           </div>
         </div>
-      )}
-    </div>
+      )
+      }
+    </div >
   );
 };
 

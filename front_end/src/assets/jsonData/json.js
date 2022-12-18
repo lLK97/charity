@@ -922,3 +922,94 @@ export const campaignJson = [
     status: "Hoàn thành",
   },
 ];
+
+export const donotionJson = [
+  {
+    _id: '1',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '2',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '3',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '4',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '5',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '6',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '7',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+  {
+    _id: '8',
+    name: 'Hoàng Minh Phương',
+    email: 'minhphuong@gmail.com',
+    phone: '09765754354',
+    address: '26, Cầu Giấy, Hà Nội',
+    amount: '2.000.000',
+    note: '',
+    payment: 'Ví momo',
+    auth: true
+  },
+]
