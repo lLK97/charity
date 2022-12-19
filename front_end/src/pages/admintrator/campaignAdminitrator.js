@@ -1,6 +1,6 @@
 import React from "react";
 import HeadAdminitrator from "../../components/headAdminitrator";
-import styles from "./module/campaign.module.css";
+import styles from "./module/table.module.css";
 
 import {
   DropdownMenu,
@@ -23,7 +23,7 @@ const CampaignAdminitrator = () => {
   const [checked, setcheck] = React.useState(false);
   const [indexDropdown, setindexDropdown] = React.useState(null);
   const [isAddNew, setisAddNew] = React.useState(true);
-  const [itemUpdate, setitemUpdate] = React.useState(null)
+  const [itemUpdate, setitemUpdate] = React.useState(null);
 
   const toggle = (index) => {
     indexDropdown == index ? setindexDropdown(null) : setindexDropdown(index);
@@ -33,9 +33,9 @@ const CampaignAdminitrator = () => {
   };
   const handleUpdate = (e) => {
     setisAddNew(false);
-    setitemUpdate(campaignJson.find(item => item._id == e));
+    setitemUpdate(campaignJson.find((item) => item._id == e));
     setActiveAddCampaign(true);
-  }
+  };
   return (
     <div className={`${styles.wrapper} wrapperPageAdminitrator`}>
       <HeadAdminitrator title="Quản lý chiến dịch quyên góp" user="Admin" />
@@ -43,13 +43,12 @@ const CampaignAdminitrator = () => {
       {activeAddCampaign != false ? (
         <AddCampaignAdminitrator
           handleCancel={handleCancel}
-          action={isAddNew == true ? 'new' : 'update'}
+          action={isAddNew == true ? "new" : "update"}
           itemUpdate={itemUpdate}
         />
       ) : (
         <div className={styles.wrapperContentPage}>
-          <ServiceAdministrator
-            setActiveAdd={setActiveAddCampaign} />
+          <ServiceAdministrator setActiveAdd={setActiveAddCampaign} />
           <div className={styles.wrapperTable}>
             <Table borderless>
               <thead>
@@ -73,7 +72,7 @@ const CampaignAdminitrator = () => {
               <tbody>
                 {campaignJson.map((item, index) => {
                   return (
-                    <tr key={index} >
+                    <tr key={index}>
                       <td>
                         <input
                           type="checkbox"
@@ -81,13 +80,25 @@ const CampaignAdminitrator = () => {
                           checked={checkedAll == true ? true : null}
                         />
                       </td>
-                      <td onClick={() => handleUpdate(item._id)}>{item.title}</td>
-                      <td onClick={() => handleUpdate(item._id)}>{item.start}</td>
+                      <td onClick={() => handleUpdate(item._id)}>
+                        {item.title}
+                      </td>
+                      <td onClick={() => handleUpdate(item._id)}>
+                        {item.start}
+                      </td>
                       <td onClick={() => handleUpdate(item._id)}>{item.end}</td>
-                      <td onClick={() => handleUpdate(item._id)}>{item.orgsName}</td>
-                      <td onClick={() => handleUpdate(item._id)}>{item.category}</td>
-                      <td onClick={() => handleUpdate(item._id)}>{item.amount}</td>
-                      <td onClick={() => handleUpdate(item._id)}>{item.status}</td>
+                      <td onClick={() => handleUpdate(item._id)}>
+                        {item.orgsName}
+                      </td>
+                      <td onClick={() => handleUpdate(item._id)}>
+                        {item.category}
+                      </td>
+                      <td onClick={() => handleUpdate(item._id)}>
+                        {item.amount}
+                      </td>
+                      <td onClick={() => handleUpdate(item._id)}>
+                        {item.status}
+                      </td>
                       <td>
                         <Dropdown
                           isOpen={indexDropdown == index ? true : false}
@@ -95,7 +106,12 @@ const CampaignAdminitrator = () => {
                         >
                           <DropdownToggle caret>Chỉnh sửa</DropdownToggle>
                           <DropdownMenu>
-                            <DropdownItem onClick={() => handleUpdate(item._id)}> Sửa</DropdownItem>
+                            <DropdownItem
+                              onClick={() => handleUpdate(item._id)}
+                            >
+                              {" "}
+                              Sửa
+                            </DropdownItem>
                             <DropdownItem>Xóa</DropdownItem>
                           </DropdownMenu>
                         </Dropdown>
@@ -107,9 +123,8 @@ const CampaignAdminitrator = () => {
             </Table>
           </div>
         </div>
-      )
-      }
-    </div >
+      )}
+    </div>
   );
 };
 

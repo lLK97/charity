@@ -1,0 +1,66 @@
+button span {
+  margin-left: 10px;
+}
+.button {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.wrapperTable {
+  margin-top: 32px !important;
+  background-color: rgb(255, 255, 255);
+  padding: 16px !important;
+}
+thead tr th,
+tbody tr td {
+  text-align: left !important;
+  color: black !important;
+  cursor: pointer;
+}
+thead tr th:nth-child(2) {
+  width: 30%;
+}
+tbody tr td:nth-child(2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.wrapperTable thead tr th {
+  max-width: 15%;
+}
+
+.wrapperTable tbody tr td:not(:last-child) {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrapperAdd {
+  background-color: white;
+  margin-top: 32px;
+  padding: 32px;
+}
+.wrapperAdd h5 {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.646);
+}
+
+form {
+  margin-top: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.646);
+}
+.grButton {
+  margin-top: 32px !important;
+}
+.button {
+  border-radius: 5px;
+  margin-right: 16px;
+}

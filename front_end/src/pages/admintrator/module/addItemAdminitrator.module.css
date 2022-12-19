@@ -1,9 +1,9 @@
-.wrapperAddCampaign {
+.wrapperAdd {
   background-color: white;
   margin-top: 32px;
   padding: 32px;
 }
-.wrapperAddCampaign h5 {
+.wrapperAdd h5 {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.646);
 }
